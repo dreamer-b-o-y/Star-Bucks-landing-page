@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: 0.3s;
+}
+html{
+    transition: 0.3s;
+}
+#circleR{   
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(33, 85, 35);
+    clip-path: circle(50% at right 90%);
+    transition: 0.3s;
+}
+#circler{   
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #153e17;
+    clip-path: circle(700px at right 800px);
+    transition: 0.3s;
+}
+#circleL{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #153e17;
+    clip-path: circle(33% at left 20%);
+    transition: 0.3s;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: #ffffff;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+}
+header img{
+    width: 65px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    margin-right: 20px;
+    list-style: none;
+}
+header ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+header ul li a:hover{
+    text-decoration: underline;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    z-index: 2;
+}
+.content .txt ,.content .image {
+    width: 40%;
+
+}
+.image{
+    width: 40%;
+}
+.image img{
+    width: 280px;
+    transform: translateX(50px);
+}
+.txt h2{
+    margin: 10px 0;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.txt h2 strong{
+    color: #0b6e0e;
+    font-weight: 900;
+}
+.txt p{
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.txt a{
+    display: inline-block;
+    background-color: #0b6e0e;
+    padding: 7px 15px;
+    border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 600;
+}
+.txt a:hover{
+    background-color: rgb(8, 78, 10);
+    transform: scale(1.2);
+}
+
+.icons{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+}
+.icons img{
+    width: 50px;
+    margin-right: 10px;
+    transition: 0.4s;
+
+}
+.icons img:hover{
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+@media (min-width:900px) and (max-width:1230px) {
+    .image img{
+        width: 220px;
+        transform: translate(50px,100px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 62%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(40% at 750px 600px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 12%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 40px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(450px at 930px 800px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 100px 100px);
+        transition: 0.3s;
+    }
+}
+@media (min-width:775px) and (max-width:900px){
+    .txt h2{
+        margin: 10px 0;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .txt h2 strong{
+        color: #0b6e0e;
+        font-weight: 800;
+    }
+    .txt p{
+        margin: 10px 0;
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+    .txt a{
+        display: inline-block;
+        background-color: #0b6e0e;
+        padding: 7px 15px;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 600;
+    }
+    header img{
+        width: 45px;
+    }
+    .image img{
+        width: 170px;
+        transform: translate(20px,100px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 62%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(35% at 520px 600px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 12%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 40px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(420px at 670px 910px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 100px 100px);
+        transition: 0.3s;
+    }
+}
+@media (min-width:670px) and (max-width:775px){
+    .txt h2{
+        margin: 10px 0;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+    .txt h2 strong{
+        color: #0b6e0e;
+        font-weight: 800;
+    }
+    .txt p{
+        margin: 10px 0;
+        font-size: 14px;
+        font-weight: 500;
+        
+    }
+    .txt a{
+        display: inline-block;
+        background-color: #0b6e0e;
+        padding: 7px 15px;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 600;
+    }
+    header img{
+        width: 42px;
+    }
+    .image img{
+        width: 160px;
+        transform: translate(20px,80px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 66%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(38% at 490px 570px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 12%;
+        transform: translateX(-50%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 30px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(450px at 680px 900px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 100px 100px);
+        transition: 0.3s;
+    }
+    .container{
+        height: 70%;
+    }
+}
+@media(min-width:480px) and (max-width:670px){
+    .txt h2{
+        margin: 10px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .txt h2 strong{
+        color: #0b6e0e;
+        font-weight: 700;
+    }
+    .txt p{
+        margin: 10px 0;
+        font-size: 12px;
+        font-weight: 400;
+        
+    }
+    .txt a{
+        display: inline-block;
+        background-color: #0b6e0e;
+        padding: 5px 13px;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 500;
+        font-size: 13px;
+    }
+    header img{
+        width: 38px;
+    }
+    .image img{
+        width: 140px;
+        transform: translate(20px,70px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 60%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(38% at 400px 510px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 15%;
+        transform: translateX(-42%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 25px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(450px at 600px 900px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 90px 90px);
+        transition: 0.3s;
+    }
+    .container{
+        height: 67%;
+    }
+    header ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        font-size: 13px;
+    }
+    header ul li{
+        margin-right: 13px;
+        list-style: none;
+    }
+}
+@media(min-width:370px) and (max-width:480px){
+    .txt h2{
+        margin: 10px 0;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    .txt h2 strong{
+        color: #0b6e0e;
+        font-weight: 700;
+    }
+    .txt p{
+        margin: 10px 0;
+        font-size: 11px;
+        font-weight: 400;
+        
+    }
+    .txt a{
+        display: inline-block;
+        background-color: #0b6e0e;
+        padding: 5px 12px;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    header img{
+        width: 35px;
+    }
+    .image img{
+        width: 120px;
+        transform: translate(20px,50px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 60%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(38% at 330px 510px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 17%;
+        transform: translateX(-42%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 22px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(450px at 550px 920px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 90px 100px);
+        transition: 0.3s;
+    }
+    .container{
+        height: 67%;
+    }
+    header ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        font-size: 11px;
+    }
+    header ul li{
+        margin-right: 11px;
+        list-style: none;
+    }
+}
+@media(max-width:370px){
+    .txt h2{
+        margin: 10px 0;
+        font-size: 17px;
+        text-transform: uppercase;
+    }
+    .txt h2 strong{
+        color: #0b6e0e;
+        font-weight: 700;
+    }
+    .txt p{
+        margin: 10px 0;
+        font-size: 11px;
+        font-weight: 400;
+        
+    }
+    .txt a{
+        display: inline-block;
+        background-color: #0b6e0e;
+        padding: 5px 12px;
+        border-radius: 20px;
+        color: #ffffff;
+        text-decoration: none;
+        transition: 0.3s;
+        font-weight: 400;
+        font-size: 11px;
+    }
+    header img{
+        width: 33px;
+    }
+    .image img{
+        width: 110px;
+        transform: translate(20px,50px);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 100%;
+        margin: auto;
+        height: 60%;
+        z-index: 2;
+    }
+    #circleR{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(33, 85, 35);
+        clip-path: circle(40% at 300px 500px);
+        transition: 0.3s;
+    }
+    .icons{
+        position: absolute;
+        left: 17%;
+        transform: translateX(-42%);
+        bottom: 10px;
+    }
+    .icons img{
+        width: 22px;
+        margin-right: 10px;
+        transition: 0.4s;
+    
+    }
+    #circler{   
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(450px at 550px 920px);
+        transition: 0.3s;
+    }
+    #circleL{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #153e17;
+        clip-path: circle(22% at 90px 100px);
+        transition: 0.3s;
+    }
+    .container{
+        height: 67%;
+    }
+    header ul li a {
+        color: black;
+        text-decoration: none;
+        font-weight: 400;
+        letter-spacing: 1px;
+        transition: 0.5s;
+        font-size: 10px;
+    }
+    header ul li{
+        margin-right: 10px;
+        list-style: none;
+    }
+}
